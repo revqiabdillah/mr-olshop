@@ -71,7 +71,7 @@
 
 .brand-item-v2 {
     margin: 10px auto;
-    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
     width: 40%;
     height: 600px;
     display: flex;
@@ -80,7 +80,7 @@
 
 .div-space {
     flex: 1;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
 }
 
 .brand-container-item-v2 {
@@ -88,18 +88,49 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    position: relative;
 }
 .body-brand-item-v2 {
-    flex : 5;
+    flex : 6;
     display : flex;
     flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    /* background-color: darkcyan; */
+    padding: 10px;
 }
 
 .span-disc-v2 {
     flex: 1;
     transform: rotate(-90deg);
+    margin-top: 20px;
+    height: 30px;
     color: brown;
     font-size: 12px;
     font-weight: 500;
     text-align: center;
+}
+
+.block-shadow-img-v2 {
+    flex : 5;
+    height: 150px;
+    margin-top: 30%;
+    background: #afd3db;
+    width: 100%;
+}
+
+.brand-title-v2 {
+    flex: 1;
+    color: #5b5b5b;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.brand-img-v2 {
+    position: absolute;
+    bottom: 70px;
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 100%;
 }

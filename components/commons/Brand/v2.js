@@ -12,6 +12,8 @@ const Component = ({ data }) => {
               <Item
                 key={ind}
                 position={ ind % 2 === 0 ? "right" : "left"}
+                title={it.name}
+                img={it.logo}
               />
             )
         )}
