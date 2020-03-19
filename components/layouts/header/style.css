@@ -1,0 +1,29 @@
+.header-container {
+    height: 80px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #5b5b5b;
+    margin : 0;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 150px;
+    align-items: center;
+}
+.header-icon {
+    font-size: 30px !important;
+    color: #5b5b5b;
+    font-weight: 600;
+}
+
+.header-logo {
+    font-size: 25px;
+    font-weight: bold;
+    width: 30px;
+}
