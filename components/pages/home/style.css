@@ -1,0 +1,23 @@
+.home-list-brand {
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin : 30px;
+    padding: 20px;
+    background-color: #afd3db;
+}
+
+.div-slider {
+    height: 700px;
+    width: 100%;
+    background-color: #afd3db;
+    margin-bottom: 100px;
+}
+
+.list-product {
+    width: 65%;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+
+}

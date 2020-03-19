@@ -1,42 +1,9 @@
 .brand-container {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: row;
-  width: 400px;
-  height: 300px;
-  padding: 20px;
-  position: relative;
-  align-items: center;
-}
-.brand-img {
-    position: relative;
-    z-index: 100;
-}
-
-.brand-product {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-}
-
-.brand-block-img {
-    width: 370px;
-    height: 50px;
-    background-color: #afd3db;  
-    bottom: 0px;
-}
-
-.brand-span-title {
-    font-size: 25px;
-    color : #5b5b5b;
-    font-weight: bold;
-    text-decoration: underline;
-    z-index: 2;
-}
-
-.brand-span-detail {
-    transform: rotate(-90deg);
-    color: #ff0000;
-    font-size: 20px;
-    font-weight: 500;
-    height: 100%;
+  flex-wrap: wrap;
 }

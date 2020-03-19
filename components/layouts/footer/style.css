@@ -1,9 +1,10 @@
 .footer-container {
     height: 100px;
-    border-top: 2px solid #5b5b5b;
+    width: 100%;
+    border-top: 2px solid #f0f0f0;
     padding: 20px 20px 10px 20px;
-    position: absolute;
     bottom: 0;
+    margin-top: 100px;
 }
 
 .footer-menu {
@@ -47,5 +48,10 @@
 .footer-brand {
     font-weight: bold;
     font-size: 16px;
+}
+
+.footer-logo {
+    height: 100%;
+    width: 80px;
 }
 

@@ -3,8 +3,11 @@ import WithLayout from "../../layouts";
 import gql from "graphql-tag";
 import { useQuery } from "@apollo/react-hooks";
 import { graphql } from "react-apollo";
-import LinearProgress from "@material-ui/core/LinearProgress";
-import Brand from '../../commons/Brand'
+import style from "./style.css";
+import { LinearProgress, Grid } from "@material-ui/core";
+import Brand from "../../commons/Brand";
+import Carousel from "../../commons/Carousel";
+import { SLIDER } from "../../../data";
 
 const Component = () => {
   const query = gql`
@@ -18,18 +21,25 @@ const Component = () => {
     }
   `;
   const { loading, error, data } = useQuery(query);
-  if (loading) return <LinearProgress />;
+  const carousel = SLIDER;
   if (error) return `Error! ${error.message}`;
   return (
     <WithLayout headerColor="#afd3db">
-        <Brand />
-      <div>
-        {data.getBrandList.map(item => (
-          <p key={item.attribute_id}>{item.name}</p>
-        ))}
-      </div>
+      <Grid container>
+        <Grid sm={12} lg={12}>
+          <div className="div-slider">
+            <Carousel data={SLIDER} />
+          </div>
+        </Grid>
+        <Grid sm={12} lg={12} className="list-product" item>
+          {loading ? (
+            <LinearProgress />
+          ) : (<Brand  data={data.getBrandList}/>
+          )}
+        </Grid>
+      </Grid>
     </WithLayout>
   );
 };
 
-export default Component
+export default Component;

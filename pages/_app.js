@@ -3,6 +3,7 @@ import App from 'next/app';
 import { ApolloProvider } from '@apollo/react-hooks';
 
 import withData from '../utils/apollo-client';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class MyApp extends App {
   render() {

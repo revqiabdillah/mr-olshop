@@ -6,7 +6,6 @@
     justify-content: space-between;
     align-items: center;
     color: #5b5b5b;
-    margin : 0;
 }
 
 .header-right {
@@ -23,7 +22,6 @@
 }
 
 .header-logo {
-    font-size: 25px;
-    font-weight: bold;
-    width: 30px;
+    width: 80px;
+    height: 100%;
 }

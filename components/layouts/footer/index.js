@@ -6,7 +6,7 @@ const Component = () => {
   const menu = MENU_FOOTER;
   const date = new Date()
   return (
-    <div className="footer-contaner">
+    <div className="footer-container">
       <div className="footer-top">
         <div className="footer-menu">
           {menu.map(mn => (
@@ -15,7 +15,9 @@ const Component = () => {
             </a>
           ))}
         </div>
-        <div className="footer-logo">LOGO</div>
+        <div className="footer-logo">
+          <img src="/assets/img/logo.png" className="footer-logo"></img>
+        </div>
         <div className="footer-sosmed">
           {SOSMED.map((sosmed, ind) => (
             <a href="#" className="footer-btn-menu" key={ind}>

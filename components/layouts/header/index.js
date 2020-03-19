@@ -14,7 +14,7 @@ const Component = ({ style, bgColor }) => {
       <a href="#" className="header-menu-btn">
         <Menu  className="header-icon" />
       </a>
-      <span className="header-logo">{NAME_SITE}</span>
+      <img src="/assets/img/logo.png" className="header-logo"></img>
       <div className="header-right">
         <a href="#">
           <Badge badgeContent={5} color="secondary">

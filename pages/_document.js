@@ -1,6 +1,6 @@
-import React from 'react';
-import Document, { Head, Main, NextScript } from 'next/document';
-import { ServerStyleSheets } from '@material-ui/styles';
+import React from "react";
+import Document, { Head, Main, NextScript } from "next/document";
+import { ServerStyleSheets } from "@material-ui/styles";
 
 class MyDocument extends Document {
   render() {
@@ -13,9 +13,22 @@ class MyDocument extends Document {
             name="viewport"
           />
           {/* PWA primary color */}
-          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+          <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+          />
           <link
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossOrigin="anonymous"
+          />
+          <link
+            href="assets/css/app.css"
             rel="stylesheet"
           />
         </Head>
@@ -34,7 +47,7 @@ MyDocument.getInitialProps = async ctx => {
 
   ctx.renderPage = () =>
     originalRenderPage({
-      enhanceApp: App => props => sheets.collect(<App {...props} />),
+      enhanceApp: App => props => sheets.collect(<App {...props} />)
     });
 
   const initialProps = await Document.getInitialProps(ctx);
@@ -46,8 +59,8 @@ MyDocument.getInitialProps = async ctx => {
       <React.Fragment key="styles">
         {initialProps.styles}
         {sheets.getStyleElement()}
-      </React.Fragment>,
-    ],
+      </React.Fragment>
+    ]
   };
 };
 

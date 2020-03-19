@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./style.css";
-import Item from '../BrandItem'
+import Item from '../BrandItem/v2'
 
 const Component = ({ data }) => {
   return (
     <div className="brand-container">
       {
         data.length > 0 && data.map((it, ind) => it.logo && (
-          <Item key={ind} img={it.logo} title={it.name} position={ind % 2 == 0 ? 'left' : "right"} />
+          <Item key={ind} />
         ) )
       }
     </div>
