@@ -5,7 +5,7 @@ import { useQuery } from "@apollo/react-hooks";
 import { graphql } from "react-apollo";
 import style from "./style.css";
 import { LinearProgress, Grid } from "@material-ui/core";
-import Brand from "../../commons/Brand";
+import Brand from "../../commons/Brand/v2";
 import Carousel from "../../commons/Carousel";
 import { SLIDER } from "../../../data";
 
